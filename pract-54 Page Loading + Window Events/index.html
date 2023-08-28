@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>pract-54 Page Loading + Window Events</title>
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="img/shopping-icon.png" alt="note-image">
+            <h1 id="app-title">Shopping List</h1>
+        </header>
+
+        <form id="item-form">
+            <div class="form-conttrol">
+                <!-- Text input -->
+                <input type="text" class="form-input" id="item-input" name="item" placeholder="Enter Item">
+                <!-- <a href="https://www.google.com">google</a> -->
+            </div>
+                <!-- Select Input -->
+                <select name="priority" id="priority-input" class="form-input">
+                    <option value="0">Select Priority</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+
+                <!-- Checkbox Input -->
+                <input type="checkbox" id="checkbox">
+                Recurring item
+                <br>
+            
+
+            <div class="form-conttrol">
+                <button type="submit" class="btn">
+                    <i class="fa-fa-solid fa-plus"> Add Item</i>
+                </button>
+            </div>
+
+            <div class="filter">
+                <input type="text" class="form-input-filter" id="filter" placeholder="Filter Items">
+            </div>
+
+            <ul class="items" id="item-list">
+                <li class="item">
+                    Apples
+                    <button class="remove-item btn-link text-red">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </li>
+                <li class="item">
+                    Orange Juice
+                    <button class="remove-item btn-link text-red">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </li>
+                <li class="item">
+                    Oreos
+                    <button class="remove-item btn-link text-red">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </li>
+                <li class="item">
+                    Milk
+                    <button class="remove-item btn-link text-red">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </li>
+            </ul>
+
+            <button class="btn-clear" id="clear">Clear All</button>
+            
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus necessitatibus sapiente possimus tenetur laboriosam provident, ullam ipsam harum hic autem fugiat nulla eos quam facere, vel qui quae nam ducimus inventore est? Perspiciatis explicabo officia cupiditate veniam vel laudantium impedit illum, et ipsam recusandae exercitationem optio, voluptatibus id reprehenderit dolor quo quis quia. Labore nobis velit praesentium quidem ut perferendis ipsum assumenda, harum beatae voluptates aspernatur placeat vel ad. Quam officia ducimus delectus odit esse cumque nemo assumenda, adipisci dolore sapiente fugiat eligendi minima temporibus maiores libero soluta non, veniam atque sint dolor accusantium quod eius deleniti.</p>
+            
+            <p>Nisi quisquam vitae eaque dignissimos. Laboriosam perspiciatis accusantium deserunt praesentium consequatur, aperiam tempora explicabo soluta veniam tenetur tempore cupiditate odit asperiores laudantium harum temporibus optio non ratione sapiente illum quis ducimus! Rem, sint. Aperiam ipsa error dolor, asperiores sunt assumenda, facere obcaecati, nisi consequatur sed et. Quam veritatis unde, itaque enim magni fugit voluptatem at animi labore alias expedita ipsam, natus error nam, reiciendis inventore assumenda exercitationem totam explicabo. Quia consequatur qui asperiores deleniti ratione in nemo cupiditate provident doloribus tenetur ex neque excepturi quam sint vero sunt, atque error fugit iusto quis aliquid! Suscipit ab facere dolorum eligendi maiores. Provident modi nulla vel, earum fugit, odio impedit et doloribus officiis omnis consequatur? Vero numquam repellat iusto et perspiciatis a deleniti exercitationem accusamus, voluptas nisi quidem provident voluptate minima molestiae </p>
+        </form>
+    </div>
+
+    
+</body>
+</html>
